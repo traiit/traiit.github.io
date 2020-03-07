@@ -1,10 +1,9 @@
-title: Your awesome title
-author: GitHub User
-email: your-email@domain.com
+title: trai IT
+author: traiit
+email: traiit.blogger@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+Xin chào mình là Trai IT - một sinh viên, lập trình viên. Đây là trang blog cá nhân của mình. Chia
+sẻ về đời sống, và công nghệ với góc nhìn cá nhân <3
 show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
@@ -12,16 +11,16 @@ show_excerpts: true # set to true to show excerpts on the homepage
 sass:
   sass_dir: _sass
 plainwhite:
-  name: Adam Denisov
-  tagline: Developer. Designer
+  name: Trai IT
+  tagline: Programmer
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
 
   # generate social links in footer
   social_links:
-    twitter: thelehhman
-    github:  thelehhman
-    linkedIn: in/thelehhman
+  # twitter:
+  github:  traiit
+  # linkedIn: in/thelehhman
     rss: rss
     # dribbble: jekyll
     # facebook: jekyll
