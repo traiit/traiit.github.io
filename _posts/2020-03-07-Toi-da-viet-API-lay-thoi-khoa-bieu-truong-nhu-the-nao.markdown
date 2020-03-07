@@ -10,36 +10,40 @@ diện không trực quan)**. Một cách nữa là viết lại thời khóa bi
 Các cách này không phù hợp với một thằng lười như mình và mình muốn dùng nhiều lần... Dựng API lấy thời khóa biểu
 sau đó có thể viết chatbot nhắc lịch hay web/mobile xem lịch tùy ý nữa... Hừm .. **Bắt đầu thôi**.
 
-##Bước 0: Ý tưởng thực hiện
+>Bước 0: Ý tưởng thực hiện
 - Input: tài khoản, mật khẩu sử dụng trên trang trường.
 - Lấy file thời khóa biểu.
 - Phân tích file thời khóa biểu => dữ liệu (JSON).
 
 
-##Bước 1: Phân tích request
-![Đăng nhập vào trang trường](./assets/1.png)
+>Bước 1: Phân tích request
+>
+![Đăng nhập vào trang trường](/assets/1.png)
 **Password encrypted trước khi gửi lên!!**
 
 ![Bắt request login](/assets/2.PNG)
 **Password truyền lên đã mã hóa md5, có một số data khác**
 Chọn **request login > Copy as cURL (bash)**. Mở [Postman](https://www.postman.com) Chọn **Import >
 Paste raw text > Ấn nút import** Ta được:
-![](./assets/3.PNG)
+![](/assets/3.PNG)
 Gửi **POST** thử xem sao !
-![](./assets/4.PNG)
+![](/assets/4.PNG)
 Vậy là lấy được cookie rồi ^^
 Đến với phần lấy file, mình sẽ phân tích request lấy file như request trên và đây là kết quả:
 ![Headers](./assets/6.PNG)
 Phần Headers
 
-![Response](./assets/5.PNG) 
+![Response](/assets/5.PNG) 
 Phần response - file excel là đây chứ đâu ^^
 
-##Bước 2: Tiến hành code 
+>Bước 2: Tiến hành code 
+>
 Mình sử dụng _express_ của **NodeJS**
-###Cấu trúc project
-![](./assets/7.PNG)
-###Login
+>Cấu trúc project
+>
+![](/assets/7.PNG)
+>Login
+>
 Nhiệm vụ là lấy cookie :))
 ```javascript
 
@@ -86,7 +90,8 @@ module.exports = (username,password) =>{
 } 
 ```
 
-###Get element 
+>Get element
+> 
 Mục đích là lấy các element trong body.
 Sử dụng **cheerio**
 ```javascript
@@ -190,7 +195,8 @@ module.exports = async(username,password) =>{
 }
 ```
 
-###Trích xuất dữ liệu từ file
+>Trích xuất dữ liệu từ file
+>
 **_Phân tích [file](../files/ThoiKhoaBieuSinhVien.xls) và tiến hành code_**
 Sử dụng **xlsx**.
 ```javascript
@@ -318,15 +324,17 @@ module.exports = (file) =>{
     });
 }
 ```
-###Kết quả
+>Kết quả
+>
 ```json
 {"task":"readFile","success":true,"student_id":"xxxxx","name":"xxxxx","class_name":"CT2C","major":"Công nghệ thông tin","schedule":[{"date":1578355200000,"lessons":[{"lesson":"10,11,12","subject_name":"Hệ thống thông tin di động","address":" 301_TA2 TA2"}]},{"date":1578960000000,"lessons":[{"lesson":"10,11,12","subject_name":"Hệ thống thông tin di động","address":" 301_TA2 TA2"},{"lesson":"7,8,9","subject_name":"Kiến trúc máy tính","address":" 301_TA2 TA2"}]},{"date":1580688000000,"lessons":[{"lesson":"10,11,12","subject_name":"Hệ thống thông tin di động","address":" 301_TA2 TA2"},{"lesson":"7,8,9","subject_name":"Nguyên lý hệ điều hành","address":" 301_TA2 TA2"}]},{"date":1581292800000,"lessons":[{"lesson":"10,11,12","subject_name":"Hệ thống thông tin di động","address":" 301_TA2 TA2"},{"lesson":"7,8,9","subject_name":"Nguyên lý hệ điều hành","address":" 301_TA2 TA2"}]},{"date":1581897600000,"lessons":[{"lesson":"10,11,12","subject_name":"Hệ thống thông tin di động","address":" 301_TA2 TA2"},{"lesson":"7,8,9","subject_name":"Nguyên lý hệ điều hành","address":" 301_TA2 TA2"}]},{"date":1582502400000,"lessons":[{"lesson":"10,11,12","subject_name":"Hệ thống thông tin di động","address":" 301_TA2 TA2"},{"lesson":"7,8,9","subject_name":"Nguyên lý hệ điều hành","address":" 301_TA2 TA2"}]},{"date":1583107200000,"lessons":[{"lesson":"10,11,12","subject_name":"Hệ thống thông tin di động","address":" 301_TA2 TA2"},{"lesson":"7,8,9","subject_name":"Nguyên lý hệ điều hành","address":" 301_TA2 TA2"}]},{"date":1583712000000,"lessons":[{"lesson":"10,11,12","subject_name":"Hệ thống thông tin di động","address":" 301_TA2 TA2"},{"lesson":"7,8,9","subject_name":"Nguyên lý hệ điều hành","address":" 301_TA2 TA2"}]},{"date":1584316800000,"lessons":[{"lesson":"10,11,12","subject_name":"Hệ thống thông tin di động","address":" 301_TA2 TA2"},{"lesson":"7,8,9","subject_name":"Nguyên lý hệ điều hành","address":" 301_TA2 TA2"}]},{"date":1584057600000,"lessons":[{"lesson":"10,11,12","subject_name":"Hệ thống thông tin di động","address":" 301_TA2 TA2"}]}]}
 ```
 
-###Sản phẩm
+>Sản phẩm
+>
 _API được sử dụng trong app viết bởi anh trong CLB của mình._
  [Ứng dụng xem lịch học](https://play.google.com/store/apps/details?id=kma.hatuan314.schedule)
- ![Ảnh](./assets/8.png)
+ ![Ảnh](/assets/8.png)
 **Xin cảm ơn các bạn <3**
 
 
