@@ -1,55 +1,9 @@
-title: trai IT
-author: traiit
-email: traiit.blogger@gmail.com
-description: > # this means to ignore newlines until "show_exerpts:"
-Xin chào mình là Trai IT - một sinh viên, lập trình viên. Đây là trang blog cá nhân của mình. Chia
-sẻ về đời sống, và công nghệ với góc nhìn cá nhân <3
-show_excerpts: true # set to true to show excerpts on the homepage
+name: Solar Theme
+url: http://example.org
+description: A stylish blog using the Solarized color palette
 
-# Minima date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-sass:
-  sass_dir: _sass
-plainwhite:
-  name: Trai IT
-  tagline: Programmer
-  date_format: "%b %-d, %Y"
-  sitemap: true # set to true to generate sitemap.xml content
+permalink: /:year/:month/:day/:title/
+paginate: 10
 
-  # generate social links in footer
-  social_links:
-  # twitter:
-  github:  traiit
-  # linkedIn: in/thelehhman
-    rss: rss
-    # dribbble: jekyll
-    # facebook: jekyll
-    # flickr:   jekyll
-    # instagram: jekyll
-    # linkedin: jekyll
-    # pinterest: jekyll
-    # youtube: jekyll
-    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
-    # youtube_channel_name: CloudCannon
-    # telegram: jekyll
-    # googleplus: +jekyll
-    # microdotblog: jekyll
-
-    # Mastodon instances
-    # mastodon:
-    # - username: jekyll
-    #   instance: example.com
-    # - username: jekyll2
-    #   instance: example.com
-
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.md
-
-# Build settings
-theme: plainwhite
-
-plugins:
-  - jekyll-seo-tag
-#  - jekyll-feed
+gems: [jekyll-paginate]
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
