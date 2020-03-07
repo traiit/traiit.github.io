@@ -55,9 +55,9 @@ Mình sử dụng _express_ của **NodeJS**
 
 ![](/assets/7.PNG)
 
-** File login**
+**File login**
 
-Nhiệm vụ là lấy cookie :))
+_Nhiệm vụ là lấy cookie_
 ```javascript
 
 let optionsGetCookies = (username,password,form) =>{
@@ -212,7 +212,8 @@ module.exports = async(username,password) =>{
 
 **Trích xuất dữ liệu từ file**
 
-**_Phân tích [file](../files/ThoiKhoaBieuSinhVien.xls) và tiến hành code_**
+**_Phân tích [file](../files/ThoiKhoaBieuSinhVien.xls) và tiến hành code_**.
+
 Sử dụng **xlsx**.
 
 ```javascript
