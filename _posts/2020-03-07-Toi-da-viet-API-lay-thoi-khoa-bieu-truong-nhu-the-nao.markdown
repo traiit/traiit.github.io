@@ -18,7 +18,7 @@ sau đó có thể viết chatbot nhắc lịch hay web/mobile xem lịch tùy �
 
 >Bước 1: Phân tích request
 >
-![Đăng nhập vào trang trường](/assets/1.png)
+![Đăng nhập vào trang trường](/assets/1.PNG)
 **Password encrypted trước khi gửi lên!!**
 
 ![Bắt request login](/assets/2.PNG)
