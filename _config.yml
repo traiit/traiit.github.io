@@ -1,9 +1,10 @@
-title: trai IT
-author: traiit
+title: Trang blog của Trai IT
+author: Trai IT
 email: traiit.blogger@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
-Xin chào mình là Trai IT - một sinh viên, lập trình viên. Đây là trang blog cá nhân của mình. Chia
-sẻ về đời sống, và công nghệ với góc nhìn cá nhân <3
+  Xin chào các bạn đến với trang blog của Trai IT.
+  Sao mình lại đặt là "Trai IT"? Đơn giản là mình đang là một chàng sinh viên IT. Mà "Trai IT" > "traɪ it" > "try it".
+  Đúng vậy phải "try"! Mình sẽ chia sẻ về đời sống và công nghệ theo cách nhìn và tiếp cận của mình, rất cảm ơn các bạn
 show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
@@ -18,9 +19,9 @@ plainwhite:
 
   # generate social links in footer
   social_links:
-  # twitter:
-  github:  traiit
-  # linkedIn: in/thelehhman
+    twitter: traiit
+    github:  traiit
+    linkedIn: in/traiit
     rss: rss
     # dribbble: jekyll
     # facebook: jekyll
