@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Tôi đã viết API lấy thời khóa biểu trường như thế nào?"
-date:   2019-03-07 20:00:00 +0000
+date:   2020-03-07 20:00:00 +0000
 categories: Javascript NodeJS
 ---
 Helu các bạn! Mình học theo tín chỉ cho nên lịch học không phải tuần nào cùng giống 
