@@ -23,9 +23,12 @@ sau đó có thể viết chatbot nhắc lịch hay web/mobile xem lịch tùy �
 **Password encrypted trước khi gửi lên!!**
 
 ![Bắt request login](/assets/2.PNG)
-**Password truyền lên đã mã hóa md5, có một số data khác**
+
+_Password truyền lên đã mã hóa md5, có một số data khác_
+
 Chọn **request login > Copy as cURL (bash)**. Mở [Postman](https://www.postman.com) Chọn **Import >
 Paste raw text > Ấn nút import** Ta được:
+
 ![](/assets/3.PNG)
 
 Gửi **POST** thử xem sao !
