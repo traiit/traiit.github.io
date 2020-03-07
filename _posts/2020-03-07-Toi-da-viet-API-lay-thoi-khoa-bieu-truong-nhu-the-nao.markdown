@@ -17,28 +17,28 @@ sau đó có thể viết chatbot nhắc lịch hay web/mobile xem lịch tùy �
 
 
 ##Bước 1: Phân tích request
-![Đăng nhập vào trang trường](../assets/1.png)
+![Đăng nhập vào trang trường](./assets/1.png)
 **Password encrypted trước khi gửi lên!!**
 
-![Bắt request login](../assets/2.PNG)
+![Bắt request login](/assets/2.PNG)
 **Password truyền lên đã mã hóa md5, có một số data khác**
 Chọn **request login > Copy as cURL (bash)**. Mở [Postman](https://www.postman.com) Chọn **Import >
 Paste raw text > Ấn nút import** Ta được:
-![](../assets/3.PNG)
+![](./assets/3.PNG)
 Gửi **POST** thử xem sao !
-![](../assets/4.PNG)
+![](./assets/4.PNG)
 Vậy là lấy được cookie rồi ^^
 Đến với phần lấy file, mình sẽ phân tích request lấy file như request trên và đây là kết quả:
-![Headers](../assets/6.PNG)
+![Headers](./assets/6.PNG)
 Phần Headers
 
-![Response](../assets/5.PNG) 
+![Response](./assets/5.PNG) 
 Phần response - file excel là đây chứ đâu ^^
 
 ##Bước 2: Tiến hành code 
 Mình sử dụng _express_ của **NodeJS**
 ###Cấu trúc project
-![](../assets/7.PNG)
+![](./assets/7.PNG)
 ###Login
 Nhiệm vụ là lấy cookie :))
 ```javascript
@@ -326,7 +326,7 @@ module.exports = (file) =>{
 ###Sản phẩm
 _API được sử dụng trong app viết bởi anh trong CLB của mình._
  [Ứng dụng xem lịch học](https://play.google.com/store/apps/details?id=kma.hatuan314.schedule)
- ![Ảnh](../assets/8.png)
+ ![Ảnh](./assets/8.png)
 **Xin cảm ơn các bạn <3**
 
 
