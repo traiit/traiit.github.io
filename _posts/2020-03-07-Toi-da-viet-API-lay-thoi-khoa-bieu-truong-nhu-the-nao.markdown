@@ -46,11 +46,13 @@ Phần response - file excel là đây chứ đâu ^^
 **Bước 2: Tiến hành code** 
 
 Mình sử dụng _express_ của **NodeJS**
->Cấu trúc project
->
+
+**Cấu trúc project**
+
 ![](/assets/7.PNG)
->Login
->
+
+** File login**
+
 Nhiệm vụ là lấy cookie :))
 ```javascript
 
@@ -97,8 +99,8 @@ module.exports = (username,password) =>{
 } 
 ```
 
->Get element
->
+**File get elements**
+ 
 Mục đích là lấy các element trong body.
 Sử dụng **cheerio**
 ```javascript
