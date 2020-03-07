@@ -30,7 +30,7 @@ Gửi **POST** thử xem sao !
 ![](/assets/4.PNG)
 Vậy là lấy được cookie rồi ^^
 Đến với phần lấy file, mình sẽ phân tích request lấy file như request trên và đây là kết quả:
-![Headers](./assets/6.PNG)
+![Headers](/assets/6.PNG)
 Phần Headers
 
 ![Response](/assets/5.PNG) 
