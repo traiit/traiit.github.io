@@ -6,12 +6,8 @@ description: Những điều mình biết về Heroku
 meta: Những điều mình biết về Heroku
 categories: ["javascript","nodejs"]
 ---
-**Heroku là cái "quái" gì ?**
-
-Bạn có thể hiểu đơn giản là dịch vụ cung cấp hosting mà có các gói sử dụng "free" hoặc trả phí $$$.Bài viết
-này mình sẽ nói đến những gì mình biết với gói "Free".
-**Có thể bạn đã biết...**
-Bạn có thể biết các dịch vụ hosting như hostinger ,000webhost,...nhưng nó hỗ trợ khá ít ngôn ngữ không có Python, NodeJS,Ruby...
+**Heroku là cái "quái" gì ?** Bạn có thể hiểu đơn giản là dịch vụ cung cấp hosting mà có các gói sử dụng "free" hoặc trả phí $$$.Bài viết
+này mình sẽ nói đến những gì mình biết với gói "Free". **Có thể bạn đã biết... **Bạn có thể biết các dịch vụ hosting như hostinger ,000webhost,...nhưng nó hỗ trợ khá ít ngôn ngữ không có Python, NodeJS,Ruby...
 Hay các dịch vụ VPS như Vultr, DigitalOcean hay Lightsail của "ông" Amazon ...nhưng bạn phải trả phí $$$.
 Bạn có thể deploy app của mình với các ngôn ngữ Node.js, Ruby, Python, Java, PHP, Go, Scala, Clojure "Quá đủ-ý kiến chủ quan ^^"
 Lựa chọn "Free" và có thể sử dụng đa dạng nhiều ngôn ngữ như Heroku thì đúng là "Hero" :)
