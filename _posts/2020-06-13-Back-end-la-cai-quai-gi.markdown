@@ -4,7 +4,7 @@ title:  "Back-end là cái quái gì???"
 date:   2020-06-13 00:00:00 +0000
 categories: Javascript NodeJS
 ---
-
+![Mô hình client - server](/assets/9.PNG)
 Như đúng tiêu đề mình sẽ giải thích cho các bạn chuẩn bị, mới tìm hiểu *Back-end* hoặc chưa có định hướng trong ngành IT nói chung... Ở bài viết này mình chia sẻ góc nhìn của mình về những khái niệm và trải nghiệm thú vị khi học và làm với back-end.
 
 **Back-end**, để hiểu được nó thì translate có nghĩa là **mặt sau** còn front-end chắc chắn là *mặt trước* rồi ...humm. Đúng vậy, là cái thứ mà người dùng không thể nhìn thấy trên giao diện (front-end) là đằng sau giao diện ấy đang **xử lý** cái quần què gì như cách bạn gõ hay dùng giọng nói để tìm kiếm Google thôi. Người dùng không nhìn thầy mà thật ra méo quan tâm đằng sau nó như nào, chỉ quan tâm nó **phản hồi nhanh hay chậm**, có **chính xác** hay không, có **dễ dùng** hay không?
@@ -21,9 +21,7 @@ Nói đến **bách en** luôn phải nói đến **cơ sở dữ liệu (databa
  
 Sẽ có bạn thắc mắc là các trang web có thể realtime (thời gian thực) như chat, nhận thông báo, ... mà không phải load trang. Từ khóa đây **socket.io**.
 
-**VPS (Virtual Private Server)** theo Wikipedia 
-
-![VPS](/assets/5.PNG)
+**VPS (Virtual Private Server)**
 
 Mình hiểu đơn giản nó là 1 cái máy ảo chạy trên 1 con server nào đó và đặt ở đâu đó trên cái trái đất này và rồi bạn chạy ứng dụng mình trên đó. Học cách kết nối VPS , sử dụng các hệ điều hành như **windows server**, **linux (ubuntu, centos, ...)**. Học sử dụng thao tác dòng lệnh **cmd (Command Prompt)**, sử dụng **terminal**, **deploy** ứng dụng, sử dụng **firewall**, cấu hình **database**, blabla...
 
